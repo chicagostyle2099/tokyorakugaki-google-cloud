@@ -14,6 +14,9 @@ module.exports = {
   }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
+      trackingIds: [
+        'G-3G87ZJGKSV',
+      ],
       "name": "images",
       "path": "./src/images/"
     },
