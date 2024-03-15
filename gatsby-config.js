@@ -31,6 +31,8 @@ module.exports = {
     trackingIds: [
       'G-6V94Z95MHZ',
     ],
-  }
+  },
+  __key: "googleGtag",
+},
 ]
 };
