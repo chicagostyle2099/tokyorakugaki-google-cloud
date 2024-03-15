@@ -15,7 +15,7 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       trackingIds: [
-        'G-3G87ZJGKSV',
+        'G-6V94Z95MHZ',
       ],
       "name": "images",
       "path": "./src/images/"
