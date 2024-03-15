@@ -14,9 +14,6 @@ module.exports = {
   }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
-      trackingIds: [
-        'G-6V94Z95MHZ',
-      ],
       "name": "images",
       "path": "./src/images/"
     },
@@ -28,5 +25,12 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  }, {
+    resolve: 'gatsby-plugin-google-gtag',  
+    options: {
+    trackingIds: [
+      'G-6V94Z95MHZ',
+    ],
+  }
+]
 };
