@@ -4,9 +4,19 @@
 module.exports = {
   siteMetadata: {
     title: `tokyorakugaki`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.tokyorakugaki.com`
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: [  
+    {
+      resolve: "gatsby-plugin-google-gtag",
+        options: {
+          trackingIds: ['G-6V94Z95MHZ'],
+          head: true,
+          anonymize: true,
+        },
+      },
+  
+  "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -24,15 +34,16 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
-    __key: "pages"
-  }, {
-    resolve: 'gatsby-plugin-google-gtag',  
-    options: {
-    trackingIds: [
-      'G-6V94Z95MHZ',
-    ],
-  },
-  __key: "googleGtag",
-},
+    __key: "pages"  
+  }, 
+//   {
+//     resolve: 'gatsby-plugin-google-gtag',  
+//     options: {
+//     trackingIds: [
+//       'G-6V94Z95MHZ',
+//     ],
+//   },
+//   __key: "googleGtag",
+// },
 ]
 };
