@@ -1,12 +1,13 @@
 import React from "react";
 import Navigation from "./Navigation";
 import tokyorakugaki_background from "./tokyorakugaki_background";
+import links from "./links";
 
-const links = [
-  { to: "/", text: "Home" },
-  { to: "/bou", text: "bou" },
-  { to: "/bu", text: "bu" },
-];
+// const links = [
+//   { to: "/", text: "Home" },
+//   { to: "/bou/bou_棒", text: "bou_棒" },
+//   { to: "/bu/bu_武", text: "bu_武" },
+// ];
 
 const linkStyle = {
   color: "#8954A8",
@@ -78,9 +79,18 @@ const badgeStyle = {
   lineHeight: 1,
 };
 
+const layoutStyles = {
+  display: "flex",
+  flexDirection: "column",
+  minHeight: "150vh", // Ensure the layout stretches to fill the entire viewport height
+  // borderTop: "10% solid black", // Border at the top
+  // borderBottom: "10% solid black", // Border at the bottom
+};
+
+
 const Layout_Tokyo = ({ children }) => {
   return (
-    <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle }}>
+    <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
       {/* <title>Home Page</title> */}
       {
         <h1 style={headingStyles}>

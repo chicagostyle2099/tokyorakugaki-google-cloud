@@ -11,7 +11,9 @@ const kanji_background = {
   margin: 0,
   padding: 400,
   // width: "50%",
-  height: "5%",
+  //height: "5%",
+  // vh: "100%",
+  // vw: "100%",
 };
 
 export default kanji_background;

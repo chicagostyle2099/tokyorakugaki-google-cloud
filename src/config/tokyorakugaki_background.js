@@ -10,7 +10,7 @@ const tokyorakugaki_background = {
   margin: 0,
   padding: 500,
   //width: "70%",
-  height: "100%",
+  // height: "5%",
 };
 
 export default tokyorakugaki_background;
