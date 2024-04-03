@@ -7,6 +7,17 @@ import {
   HoverCardTrigger,
 } //from "../../components/ui/hover-card"; 
  from "../widgets/hovercard/hovercard";
+
+ import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "../widgets/navbar/navbar";
+
  import links from "./links";
 
 
@@ -95,7 +106,7 @@ const layoutStyles = {
   // borderBottom: "10% solid black", // Border at the bottom
 };
 
-const Layout_Tokyo2 = ({ kanji, romaji }) => {
+const Layout_Tokyo2 = ({ kanji, romaji, hiragana }) => {
   return (
     <main style={{ ...kanji_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
       <title>Kanji Template Page</title>
@@ -108,11 +119,11 @@ const Layout_Tokyo2 = ({ kanji, romaji }) => {
         style={{
           ...paragraphStyles,
           color: "#AE181E",
-          top: "520px",
-          left: "140px",
+          top: "41.8%",
+          left: "19.7%",
           position: "absolute",
-          fontSize: "70px",
-          zIndex: 2,
+          fontSize: "500%",
+          zIndex: 1,
           margin: 0,
           padding: 0,
         }}
@@ -124,11 +135,11 @@ const Layout_Tokyo2 = ({ kanji, romaji }) => {
         style={{
           ...paragraphStyles,
           color: "#000000",
-          top: "530px",
-          right: "155px",
+          top: "43.2%",
+          right: "19.7%",
           position: "absolute",
-          fontSize: "70px",
-          zIndex: 2,
+          fontSize: "500%",
+          zIndex: 1,
           margin: 0,
           padding: 0,
         }}
@@ -136,7 +147,7 @@ const Layout_Tokyo2 = ({ kanji, romaji }) => {
         <HoverCard>
   <HoverCardTrigger>{romaji}{" "}</HoverCardTrigger>
   <HoverCardContent>
-      {romaji}{" "}
+      {hiragana}{" "}
   </HoverCardContent>
 </HoverCard>
 

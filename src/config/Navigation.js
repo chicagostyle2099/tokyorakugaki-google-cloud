@@ -1,6 +1,6 @@
-// Navigation.js
 import React from "react";
 import { Link } from "gatsby";
+import { NavigationMenuDemo } from "./NavigationMenuDemo"; // Import the NavigationMenuDemo component
 
 const Navigation = ({ links }) => (
   <header>

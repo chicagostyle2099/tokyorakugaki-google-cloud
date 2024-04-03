@@ -6,9 +6,9 @@ const tokyorakugaki_background = {
   backgroundSize: "cover",
   backgroundAttachment: "scroll",
   position: "relative",
-  zIndex: 1,
-  margin: 0,
-  padding: 500,
+  zIndex: "1%",
+  margin: "0%",
+  padding: "35%",
   //width: "70%",
   // height: "5%",
 };

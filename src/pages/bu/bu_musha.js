@@ -5,7 +5,8 @@ import kanji_background from "../../config/tokyorakugaki_background";
 const bu_武 = () => {
   const Musha = "武";
   const BU = "BU";
-  return <Layout_Tokyo2 kanji={Musha} romaji={BU} />;
+  const ひらがな = "むしゃ";
+  return <Layout_Tokyo2 kanji={Musha} romaji={BU} hiragana={ひらがな}  />;
 };
 
 export default bu_武;
