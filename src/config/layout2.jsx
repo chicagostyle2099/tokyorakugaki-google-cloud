@@ -8,15 +8,15 @@ import {
 } //from "../../components/ui/hover-card"; 
  from "../widgets/hovercard/hovercard";
 
- import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "../widgets/navbar/navbar";
+//  import {
+//   NavigationMenu,
+//   NavigationMenuContent,
+//   NavigationMenuItem,
+//   NavigationMenuLink,
+//   NavigationMenuList,
+//   NavigationMenuTrigger,
+//   navigationMenuTriggerStyle,
+// } from "../widgets/navbar/shadcn_navbar";
 
  import links from "./links";
 
