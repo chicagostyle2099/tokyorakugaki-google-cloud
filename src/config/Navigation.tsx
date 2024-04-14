@@ -9,17 +9,15 @@ interface LinkItem {
 
 // Define the Navigation component
 const Navigation: React.FC<{ links: LinkItem[] }> = ({ links }) => (
-  <header>
-    <nav>
-      <ul>
-        {links.map((link) => (
-          <li key={link.to}>
-            <Link to={link.to}>{link.label}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  </header>
+  <nav style={{ position: "absolute", top: "20px", left: "20px" }}>
+    <ul style={{ listStyle: "none", padding: 0 }}>
+      {links.map((link) => (
+        <li key={link.to} style={{ display: "inline", margin: "0 10px" }}>
+          <Link to={link.to}>{link.label}</Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
 );
 
 export default Navigation;
