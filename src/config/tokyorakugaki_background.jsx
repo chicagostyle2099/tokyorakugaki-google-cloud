@@ -8,7 +8,7 @@ const tokyorakugaki_background = {
   position: "relative",
   zIndex: "1%",
   margin: "0%",
-  padding: "15%",
+  padding: "35%",
   //width: "70%",
   // height: "5%",
 };

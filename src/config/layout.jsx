@@ -2,12 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import tokyorakugaki_background from "./tokyorakugaki_background";
 import links from "./links";
-
-// const links = [
-//   { to: "/", text: "Home" },
-//   { to: "/bou/bou_棒", text: "bou_棒" },
-//   { to: "/bu/bu_武", text: "bu_武" },
-// ];
+import Navbar from "../widgets/sticky_navbar/sticky_navbar"; 
 
 const linkStyle = {
   color: "#8954A8",
@@ -22,22 +17,6 @@ const headingStyles = {
   maxWidth: 320,
 };
 
-const headingAccentStyles = {
-  color: "#663399",
-};
-
-const paragraphStyles = {
-  marginBottom: 1000,
-};
-
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
-
 const yujiSyukuRegularStyle = {
   fontFamily: "Yuji Syuku, serif",
   fontWeight: 600,
@@ -45,67 +24,43 @@ const yujiSyukuRegularStyle = {
   fontSize: "24px",
 };
 
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-};
-
-const docLinkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-};
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-};
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-};
-
 const layoutStyles = {
   display: "flex",
   flexDirection: "column",
-  minHeight: "150vh", // Ensure the layout stretches to fill the entire viewport height
-  // borderTop: "10% solid black", // Border at the top
-  // borderBottom: "10% solid black", // Border at the bottom
+  minHeight: "200vh", // Increase this value to make the page longer
+  paddingTop: "0px", // Add padding to the top to prevent overlap
+  paddingBottom: "100px", // Add padding to the bottom to ensure content is not cut off
 };
 
+const additionalSectionStyles = {
+  backgroundColor: "#f9f9f9",
+  padding: "50px 20px",
+  textAlign: "center",
+  marginTop: "50px",
+  borderTop: "1px solid #ddd",
+};
 
-const Layout_Tokyo = ({ children }) => {
+const LayoutTokyo = ({ children }) => {
   return (
     <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
-      {/* <title>Home Page</title> */}
-      {
-        <h1 style={headingStyles}>
-          <br />
-        </h1>
-      }
-
-      <Navigation links={links} />
-
+      <header>
+      <Navbar />
+        <Navigation links={links} />
+        {/* Add the Navbar component */}
+      </header>
+      <h1 style={headingStyles}>
+        {/* Adjusted margin instead of using <br /> */}
+      </h1>
       <div>
         {/* Display the populated data here */}
-        {/* <p>{apiData}</p> */}
+        {children}
+      </div>
+      <div style={additionalSectionStyles}>
+        <h2>Additional Section</h2>
+        <p>This is some additional content below the main content.</p>
       </div>
     </main>
   );
 };
 
-export default Layout_Tokyo;
+export default LayoutTokyo;

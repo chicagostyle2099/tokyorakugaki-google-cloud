@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "../widgets/navbar/navbar";
+} from "../widgets/navbar/shadcn_navbar";
 
 const components = [
   {
