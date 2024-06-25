@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import "./Navigation.css"; // Make sure to adjust the path as necessary
 
 // Define an interface for the shape of link objects
 interface LinkItem {
@@ -14,21 +15,21 @@ const Navigation: React.FC<{ links: LinkItem[] }> = ({ links }) => {
 
   return (
     <header>
-      <nav style={{ position: "absolute", top: "20px", left: "20px" }}>
-        <ul style={{ listStyle: "none", padding: 0 }}>
+      <nav className="navbar">
+        <ul className="navList">
           {links.map((link) => (
             <li
               key={link.to}
               onMouseEnter={() => setHoveredLink(link.to)}
               onMouseLeave={() => setHoveredLink(null)}
-              style={{ display: "inline-block", marginRight: "10px", position: "relative" }}
+              className="navItem"
             >
-              <Link to={link.to}>{link.label}</Link>
+              <Link to={link.to} className="navLink">{link.label}</Link>
               {link.links && link.to === hoveredLink && (
-                <ul style={{ listStyle: "none", padding: 0, position: "absolute", top: "100%", left: 0, zIndex: 1 }}>
+                <ul className="dropdownContent" style={{ display: 'block' }}>
                   {link.links.map((sublink) => (
-                    <li key={sublink.to} style={{ marginLeft: "10px" }}>
-                      <Link to={sublink.to}>{sublink.label}</Link>
+                    <li key={sublink.to} className="subNavItem">
+                      <Link to={sublink.to} className="subNavLink">{sublink.label}</Link>
                     </li>
                   ))}
                 </ul>

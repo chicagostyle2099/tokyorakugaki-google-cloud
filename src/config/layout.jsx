@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "./Navigation";
 import tokyorakugaki_background from "./tokyorakugaki_background";
 import links from "./links";
-import Navbar from "../widgets/sticky_navbar/sticky_navbar"; 
 
 const linkStyle = {
   color: "#8954A8",
@@ -15,7 +14,7 @@ const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
-};
+}; 
 
 const yujiSyukuRegularStyle = {
   fontFamily: "Yuji Syuku, serif",
@@ -44,7 +43,6 @@ const LayoutTokyo = ({ children }) => {
   return (
     <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
       <header>
-      <Navbar />
         <Navigation links={links} />
         {/* Add the Navbar component */}
       </header>
