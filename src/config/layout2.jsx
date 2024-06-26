@@ -32,7 +32,9 @@ const yujiSyukuRegularStyle = {
 const layoutStyles = {
   display: "flex",
   flexDirection: "column",
-  minHeight: "150vh",
+  minHeight: "270vh", // Increase this value to make the page longer
+  paddingTop: "0px", // Add padding to the top to prevent overlap
+  paddingBottom: "100px", // Add padding to the bottom to ensure content is not cut off
 };
 
 const Abys = {
@@ -62,8 +64,8 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
         style={{
           marginBottom: 1000,
           color: "#AE181E",
-          top: "41.8%",
-          left: "19.7%",
+          top: "27.2%",
+          left: "21.3%",
           position: "absolute",
           fontSize: "500%",
           zIndex: 1,
@@ -82,8 +84,8 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
         style={{
           marginBottom: 1000,
           color: "#000000",
-          top: "43.2%",
-          right: "19.7%",
+          top: "27.7%",
+          right: "20.5%",
           position: "absolute",
           fontSize: "500%",
           zIndex: 1, 

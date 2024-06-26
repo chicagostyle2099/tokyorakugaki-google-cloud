@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../images/tokyorakugaki_background.png";
-import backgroundImage2 from "../images/kanji_background.png";
+import backgroundImage2 from "../images/kanji_background2.png";
 
 const kanji_background = {
   background: `url(${backgroundImage2}) no-repeat center center fixed`,
