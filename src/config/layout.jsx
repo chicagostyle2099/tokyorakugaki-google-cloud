@@ -14,21 +14,24 @@ const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
+  fontSize: '4vw', // Use viewport width for responsiveness
 }; 
 
 const yujiSyukuRegularStyle = {
   fontFamily: "Abys",
   fontWeight: 500,
   fontStyle: "normal",
-  fontSize: "30px",
+  fontSize: "5vw", // Use viewport width for responsiveness
 };
 
 const layoutStyles = {
   display: "flex",
   flexDirection: "column",
-  minHeight: "200vh", // Increase this value to make the page longer
-  paddingTop: "0px", // Add padding to the top to prevent overlap
-  paddingBottom: "100px", // Add padding to the bottom to ensure content is not cut off
+  minHeight: "100vh", // Adjust the height for better responsiveness
+  paddingTop: "20px",
+  paddingBottom: "20px",
+  paddingLeft: "10px",
+  paddingRight: "10px",
 };
 
 const additionalSectionStyles = {
@@ -44,6 +47,13 @@ const Abys = {
   '@font-face': {
     fontFamily: 'Abys',
     src: "url('Abys-Regular.otf')",
+  },
+};
+
+const Otsutome = {
+  '@font-face': {
+    fontFamily: 'Otsutome',
+    src: "url('OtsutomeFont_Ver3_16.ttf')",
   },
 };
 

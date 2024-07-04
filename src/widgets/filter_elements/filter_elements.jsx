@@ -9,6 +9,18 @@ const FilterComponent = () => {
   };
 
   const items = [
+
+      { category: 'bou', name: '棒' },
+    { category: 'bou', name: '防' },
+    { category: 'bou', name: '妄' },
+    { category: 'bou', name: '謀' },
+    { category: 'bou', name: '坊' },
+    { category: 'bou', name: '妨' },
+    { category: 'bou', name: '帽' },
+    { category: 'bou', name: '望' },
+    { category: 'bou', name: '亡' },
+    { category: 'bou', name: '傍' },
+    { category: 'bou', name: '暴' },
     { category: 'cars', name: 'BMW' },
     { category: 'colors fruits', name: 'Orange' },
     { category: 'cars', name: 'Volvo' },
@@ -31,7 +43,7 @@ const FilterComponent = () => {
   return (
     <div style={{ position: 'relative', zIndex: 2 }}> {/* Ensure higher z-index */} 
       <div id="myBtnContainer">
-        <button className={`btn ${filter === 'all' ? 'active' : ''}`} onClick={() => filterSelection('all')}>Show all</button>
+        <button className={`btn ${filter === 'bou' ? 'active' : ''}`} onClick={() => filterSelection('bou')}>BOU</button>
         <button className={`btn ${filter === 'cars' ? 'active' : ''}`} onClick={() => filterSelection('cars')}>Cars</button>
         <button className={`btn ${filter === 'animals' ? 'active' : ''}`} onClick={() => filterSelection('animals')}>Animals</button>
         <button className={`btn ${filter === 'fruits' ? 'active' : ''}`} onClick={() => filterSelection('fruits')}>Fruits</button>
