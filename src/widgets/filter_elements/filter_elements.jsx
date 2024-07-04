@@ -32,7 +32,7 @@ const FilterComponent = () => {
     { category: 'animals', name: 'Dog' },
     { category: 'fruits', name: 'Melon' },
     { category: 'fruits animals', name: 'Kiwi' },
-    { category: 'fruits', name: 'Banana' },
+    { category: 'fruits', name: 'Banana' }, 
     { category: 'fruits', name: 'Lemon' },
     { category: 'animals', name: 'Cow' },
   ];
