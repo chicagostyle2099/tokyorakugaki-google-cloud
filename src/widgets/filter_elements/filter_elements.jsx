@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from "gatsby";
 import '../filter_elements/filter_elements.css'; // Adjust the path if necessary
 
 const FilterComponent = () => {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('bou');
 
   const filterSelection = (category) => {
     setFilter(category);
@@ -10,17 +11,17 @@ const FilterComponent = () => {
 
   const items = [
 
-      { category: 'bou', name: '棒' },
-    { category: 'bou', name: '防' },
-    { category: 'bou', name: '妄' },
-    { category: 'bou', name: '謀' },
-    { category: 'bou', name: '坊' },
-    { category: 'bou', name: '妨' },
-    { category: 'bou', name: '帽' },
-    { category: 'bou', name: '望' },
-    { category: 'bou', name: '亡' },
-    { category: 'bou', name: '傍' },
-    { category: 'bou', name: '暴' },
+      { category: 'bou', name: '棒', link: '/bou/bou_youjinbou'},
+    { category: 'bou', name: '防', link: '/bou/bou_bouka'},
+    { category: 'bou', name: '妄', link: '/bou/bou_boushin'},
+    { category: 'bou', name: '謀', link: '/bou/bou_hakaru'},
+    { category: 'bou', name: '坊', link: '/bou/bou_dorobou'},
+    { category: 'bou', name: '妨', link: '/bou/bou_samatageru'},
+    { category: 'bou', name: '帽', link: '/bou/bou_boushi'},
+    { category: 'bou', name: '望', link: '/bou/bou_kibou'},
+    { category: 'bou', name: '亡', link: '/bou/bou_horobosu'},
+    { category: 'bou', name: '傍', link: '/bou/bou_boukansha' },
+    { category: 'bou', name: '暴', link: '/bou/bou_bouryoku'},
     { category: 'cars', name: 'BMW' },
     { category: 'colors fruits', name: 'Orange' },
     { category: 'cars', name: 'Volvo' },
@@ -53,8 +54,8 @@ const FilterComponent = () => {
       <div className="container">
         {items.map((item, index) => (
           <div key={index} className={`filterDiv ${item.category} ${filter === 'all' || item.category.split(' ').includes(filter) ? 'show' : ''}`}>
-            {item.name}
-          </div>
+            <Link to={item.link} className="item-link">{item.name}</Link>
+            </div>
         ))}
       </div>
     </div>
