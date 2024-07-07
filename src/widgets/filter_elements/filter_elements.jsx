@@ -44,7 +44,7 @@ const FilterComponent = () => {
   return (
     <div style={{ position: 'relative', zIndex: 2 }}> {/* Ensure higher z-index */} 
       <div id="myBtnContainer">
-        <button className={`btn ${filter === 'bou' ? 'active' : ''}`} onClick={() => filterSelection('bou')}>BOU</button>
+        <button className={`btn ${filter === 'bou' ? 'active' : ''}`} onClick={() => filterSelection('bou')}>Bou</button>
         <button className={`btn ${filter === 'cars' ? 'active' : ''}`} onClick={() => filterSelection('cars')}>Cars</button>
         <button className={`btn ${filter === 'animals' ? 'active' : ''}`} onClick={() => filterSelection('animals')}>Animals</button>
         <button className={`btn ${filter === 'fruits' ? 'active' : ''}`} onClick={() => filterSelection('fruits')}>Fruits</button>

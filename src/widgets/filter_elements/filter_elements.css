@@ -7,13 +7,19 @@
 
 .filterDiv {
   float: left;
-  background-color: #2196F3;
+  background-color: #8d98a1c3;
   color: #ffffff;
   width: 100px;
   line-height: 100px;
   text-align: center;
   margin: 2px;
   display: none; /* Hidden by default */
+}
+
+/* kanji blocks */
+.filterDiv .item-link {
+  color: #000000; /* Ensure the links are white */
+  text-decoration: none;
 }
 
 .show {
@@ -34,12 +40,12 @@
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #666;
+/* tabs */
+.btn.active { 
+  background-color: rgba(59, 59, 76, 0.458);
   color: white;
 }
 
-/* Media Queries */
 @media (min-width: 600px) {
   .btn {
     width: auto;

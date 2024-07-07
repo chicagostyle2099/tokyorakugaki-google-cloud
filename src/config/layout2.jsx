@@ -4,25 +4,18 @@ import kanji_background from "./kanji_background";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../widgets/hovercard/hovercard";
 import links from "./links";
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-};
-
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
-  fontSize: '4vw', // Use viewport width for responsiveness
+  maxWidth: "100%", // Make the heading width responsive
+  fontSize: '2rem', // Use rem for font size
 };
 
 const yujiSyukuRegularStyle = {
   fontFamily: "Abys",
   fontWeight: 500,
   fontStyle: "normal",
-  fontSize: "5vw", // Use viewport width for responsiveness
+  fontSize: "2rem", // Use rem for font size
 };
 
 const layoutStyles = {
@@ -33,40 +26,62 @@ const layoutStyles = {
   paddingBottom: "20px",
   paddingLeft: "10px",
   paddingRight: "10px",
+  overflowX: "hidden", // Prevent horizontal overflow
 };
 
-const Abys = {
-  '@font-face': {
-    fontFamily: 'Abys',
-    src: "url('Abys-Regular.otf')",
-  },
+const kanjiStyle = {
+  color: "#AE181E",
+  position: "absolute",
+  fontSize: "10vw", // Use viewport width for responsiveness
+  zIndex: 1,
+  margin: 0,
+  padding: 0,
+  top: "27.2%",
+  left: "21.3%",
 };
+
+const romajiStyle = {
+  color: "#000000",
+  position: "absolute",
+  fontSize: "10vw", // Use viewport width for responsiveness
+  zIndex: 1,
+  margin: 0,
+  padding: 0,
+  top: "27.7%",
+  right: "20.5%",
+};
+
+// Media queries for better responsiveness
+const styles = `
+  @media (max-width: 768px) {
+    .kanjiStyle {
+      font-size: 15vw;
+      top: 30%;
+      left: 10%;
+    }
+    .romajiStyle {
+      font-size: 15vw;
+      top: 35%;
+      right: 10%;
+    }
+  }
+  @media (max-width: 480px) {
+    .kanjiStyle {
+      font-size: 20vw;
+      top: 35%;
+      left: 5%;
+    }
+    .romajiStyle {
+      font-size: 20vw;
+      top: 40%;
+      right: 5%;
+    }
+  }
+`;
 
 const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
   const hoverCardStyles = {
     fontFamily: 'Abys', // Replace 'Abys' with the name of your custom font
-  };
-
-  const kanjiStyle = {
-    color: "#AE181E",
-    position: "absolute",
-    fontSize: "20vw", // Use viewport width for responsiveness
-    zIndex: 1,
-    margin: 0,
-    padding: 0,
-    top: "27.2%",
-    left: "21.3%",
-  };
-
-  const romajiStyle = {
-    color: "#000000",
-    position: "absolute",
-    fontSize: "20vw", // Use viewport width for responsiveness
-    zIndex: 1,
-    margin: 0,
-    padding: 0,
-    top: "27.7%",
-    right: "20.5%",
   };
 
   return (
@@ -78,7 +93,8 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
       <h1 style={headingStyles}>
         {/* Adjusted margin instead of using <br /> */}
       </h1>
-      <p style={kanjiStyle}>
+      <style>{styles}</style>
+      <p className="kanjiStyle" style={kanjiStyle}>
         <HoverCard>
           <HoverCardTrigger style={hoverCardStyles}>{kanji}{" "}</HoverCardTrigger>
           <HoverCardContent>
@@ -86,7 +102,7 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
           </HoverCardContent>
         </HoverCard>
       </p>
-      <p style={romajiStyle}>
+      <p className="romajiStyle" style={romajiStyle}>
         {romaji}{" "}
       </p>
       <div>

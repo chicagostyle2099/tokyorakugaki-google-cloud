@@ -22,6 +22,7 @@ const Navigation: React.FC<{ links: LinkItem[] }> = ({ links }) => {
               key={link.to}
               onMouseEnter={() => setHoveredLink(link.to)}
               onMouseLeave={() => setHoveredLink(null)}
+              onClick={() => setHoveredLink(null)}
               className="navItem"
             >
               <Link to={link.to} className="navLink">{link.label}</Link>

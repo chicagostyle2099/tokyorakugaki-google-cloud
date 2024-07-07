@@ -13,8 +13,10 @@ const linkStyle = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
-  fontSize: '4vw', // Use viewport width for responsiveness
+  maxWidth: "100%",
+  fontWeight: 500,
+  fontStyle: "normal",
+  fontSize: '10vw', // Use viewport width for responsiveness
 }; 
 
 const yujiSyukuRegularStyle = {
@@ -32,6 +34,7 @@ const layoutStyles = {
   paddingBottom: "20px",
   paddingLeft: "10px",
   paddingRight: "10px",
+  overflowX: "hidden", // Prevent horizontal overflow
 };
 
 const additionalSectionStyles = {
@@ -60,13 +63,15 @@ const Otsutome = {
 const LayoutTokyo = ({ children }) => {
   return (
     <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
+     
       <header>
+      {/* Tokyo
+      <br></br> 
+      Rakugaki */}
         <Navigation links={links} />
         {/* Add the Navbar component */}
       </header>
-      <h1 style={headingStyles}>
-        {/* Adjusted margin instead of using <br /> */}
-      </h1>
+      
       <div>
         {/* Display the populated data here */}
         {children}
