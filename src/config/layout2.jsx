@@ -1,54 +1,89 @@
 import React from "react";
 import Navigation from "./Navigation";
 import kanji_background from "./kanji_background";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "../widgets/hovercard/hovercard";
-
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "../widgets/hovercard/hovercard";
 import links from "./links";
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-};
 
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: "100%", // Make the heading width responsive
+  fontSize: '2rem', // Use rem for font size
 };
 
 const yujiSyukuRegularStyle = {
   fontFamily: "Abys",
   fontWeight: 500,
   fontStyle: "normal",
-  fontSize: "30px",
+  fontSize: "2rem", // Use rem for font size
 };
 
 const layoutStyles = {
   display: "flex",
   flexDirection: "column",
-  minHeight: "270vh", // Increase this value to make the page longer
-  paddingTop: "0px", // Add padding to the top to prevent overlap
-  paddingBottom: "100px", // Add padding to the bottom to ensure content is not cut off
+  minHeight: "100vh", // Adjust the height for better responsiveness
+  paddingTop: "20px",
+  paddingBottom: "20px",
+  paddingLeft: "10px",
+  paddingRight: "10px",
+  overflowX: "hidden", // Prevent horizontal overflow
 };
 
-const Abys = {
-  '@font-face': {
-    fontFamily: 'Abys',
-    src: "url('Abys-Regular.otf')",
-  },
+const kanjiStyle = {
+  color: "#AE181E",
+  position: "absolute",
+  fontSize: "10vw", // Use viewport width for responsiveness
+  zIndex: 1,
+  margin: 0,
+  padding: 0,
+  top: "27.2%",
+  left: "21.3%",
 };
 
+const romajiStyle = {
+  color: "#000000",
+  position: "absolute",
+  fontSize: "10vw", // Use viewport width for responsiveness
+  zIndex: 1,
+  margin: 0,
+  padding: 0,
+  top: "27.7%",
+  right: "20.5%",
+};
+
+// Media queries for better responsiveness
+const styles = `
+  @media (max-width: 768px) {
+    .kanjiStyle {
+      font-size: 15vw;
+      top: 30%;
+      left: 10%;
+    }
+    .romajiStyle {
+      font-size: 15vw;
+      top: 35%;
+      right: 10%;
+    }
+  }
+  @media (max-width: 480px) {
+    .kanjiStyle {
+      font-size: 20vw;
+      top: 35%;
+      left: 5%;
+    }
+    .romajiStyle {
+      font-size: 20vw;
+      top: 40%;
+      right: 5%;
+    }
+  }
+`;
 
 const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
   const hoverCardStyles = {
     fontFamily: 'Abys', // Replace 'Abys' with the name of your custom font
   };
+
   return (
     <main style={{ ...kanji_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
       <header>
@@ -56,57 +91,25 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
       </header>
       <title>Kanji Template Page</title>
       <h1 style={headingStyles}>
-        <br />
-        <br />
-        <br />
+        {/* Adjusted margin instead of using <br /> */}
       </h1>
-      <p
-        style={{
-          marginBottom: 1000,
-          color: "#AE181E",
-          top: "27.2%",
-          left: "21.3%",
-          position: "absolute",
-          fontSize: "500%",
-          zIndex: 1,
-          margin: 0,
-          padding: 0,
-        }}
-      >
+      <style>{styles}</style>
+      <p className="kanjiStyle" style={kanjiStyle}>
         <HoverCard>
-        <HoverCardTrigger style={hoverCardStyles}>{kanji}{" "}</HoverCardTrigger>
-        <HoverCardContent>
-              {hiragana}{" "}
+          <HoverCardTrigger style={hoverCardStyles}>{kanji}{" "}</HoverCardTrigger>
+          <HoverCardContent>
+            {hiragana}{" "}
           </HoverCardContent>
-          </HoverCard>
+        </HoverCard>
       </p>
-      <p
-        style={{
-          marginBottom: 1000,
-          color: "#000000",
-          top: "27.7%",
-          right: "20.5%",
-          position: "absolute",
-          fontSize: "500%",
-          zIndex: 1, 
-          margin: 0,
-          padding: 0,
-        }}
-      >
-      {/* <span style={yujiSyukuRegularStyle}> */}
-          {romaji}{" "}
-        {/* </span> */}
-          {/* <HoverCardContent>
-              {hiragana}{" "}
-          </HoverCardContent> */}
+      <p className="romajiStyle" style={romajiStyle}>
+        {romaji}{" "}
       </p>
       <div>
         {/* Display the populated data here */}
-        {/* <p>{apiData}</p> */}
       </div>
     </main>
   );
 };
 
 export default LayoutTokyo2;
- 

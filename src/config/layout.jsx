@@ -13,22 +13,28 @@ const linkStyle = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: "100%",
+  fontWeight: 500,
+  fontStyle: "normal",
+  fontSize: '10vw', // Use viewport width for responsiveness
 }; 
 
 const yujiSyukuRegularStyle = {
   fontFamily: "Abys",
   fontWeight: 500,
   fontStyle: "normal",
-  fontSize: "30px",
+  fontSize: "5vw", // Use viewport width for responsiveness
 };
 
 const layoutStyles = {
   display: "flex",
   flexDirection: "column",
-  minHeight: "200vh", // Increase this value to make the page longer
-  paddingTop: "0px", // Add padding to the top to prevent overlap
-  paddingBottom: "100px", // Add padding to the bottom to ensure content is not cut off
+  minHeight: "100vh", // Adjust the height for better responsiveness
+  paddingTop: "20px",
+  paddingBottom: "20px",
+  paddingLeft: "10px",
+  paddingRight: "10px",
+  overflowX: "hidden", // Prevent horizontal overflow
 };
 
 const additionalSectionStyles = {
@@ -47,16 +53,25 @@ const Abys = {
   },
 };
 
+const Otsutome = {
+  '@font-face': {
+    fontFamily: 'Otsutome',
+    src: "url('OtsutomeFont_Ver3_16.ttf')",
+  },
+};
+
 const LayoutTokyo = ({ children }) => {
   return (
     <main style={{ ...tokyorakugaki_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
+     
       <header>
+      {/* Tokyo
+      <br></br> 
+      Rakugaki */}
         <Navigation links={links} />
         {/* Add the Navbar component */}
       </header>
-      <h1 style={headingStyles}>
-        {/* Adjusted margin instead of using <br /> */}
-      </h1>
+      
       <div>
         {/* Display the populated data here */}
         {children}
