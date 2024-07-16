@@ -1,0 +1,95 @@
+/* tokyorakugaki_background.css */
+
+.mainBackground {
+  /* background: url('../images/tokyorakugaki_background.png') no-repeat center center; */
+  background-size: cover;
+  background-color: #DFD4BA;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px 10px;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.headingStyles {
+  margin-top: 0;
+  margin-bottom: 64px;
+  max-width: 100%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10vw; /* Use viewport width for responsiveness */
+}
+
+.yujiSyukuRegular {
+  font-family: "Abys";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5vw; /* Use viewport width for responsiveness */
+}
+
+/* Header styles */
+/* header {
+  background: url('../images/tokyorakugaki_background.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+} */
+
+.additionalSection {
+  background-color: #8d98a1c3;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .kanjiStyle {
+    font-size: 15vw;
+    top: 30%;
+    left: 10%;
+  }
+  .romajiStyle {
+    font-size: 15vw;
+    top: 35%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanjiStyle {
+    font-size: 20vw;
+    top: 35%;
+    left: 5%;
+  }
+  .romajiStyle {
+    font-size: 20vw;
+    top: 40%;
+    right: 5%;
+  }
+}
+
+/* Adjust background size and position for larger screens */
+@media (min-width: 1024px) {
+  .mainBackground {
+    padding: 40px 20px;
+    background-size: cover;
+  }
+  .headingStyles {
+    font-size: 5vw; /* Adjust for larger screens */
+  }
+  .yujiSyukuRegular {
+    font-size: 2.5vw; /* Adjust for larger screens */
+  }
+  .additionalSection {
+    padding: 70px 40px;
+  }
+}
+
+/* Adjust background size and position for smaller screens */
+@media (max-width: 1024px) {
+  .mainBackground {
+    background-size: contain;
+  }
+}

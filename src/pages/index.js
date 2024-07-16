@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <div>
       <LayoutTokyo>
-        <div style={{ marginTop: '800px', marginBottom: '20px' }}>
+        <div style={{ marginTop: '80px', marginBottom: '20px' }}>
           {/* <p>{TokyoRakugaki}</p> */}
         </div>
         <FilterComponent />
