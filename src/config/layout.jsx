@@ -8,9 +8,10 @@ const LayoutTokyo = ({ children }) => {
   return (
     <main className="mainBackground yujiSyukuRegular">
       <header className="header">
+      <Navigation links={links} />
         <div className="headerContent">
-          <Navigation links={links} />
-          {/* <img src={tokyorakugaki_header} alt="Tokyo Rakugaki Header" className="headerImage" /> */}
+          
+          {/* <img src={tokyorakugaki_header} alt="Tokyo Rakugaki" className="headerImage" /> */}
         </div>
       </header>
       

@@ -28,12 +28,37 @@
   font-size: 5vw; /* Use viewport width for responsiveness */
 }
 
-/* Header styles */
-/* header {
-  background: url('../images/tokyorakugaki_background.png') no-repeat center center fixed;
+.header {
+  position: relative;
+  text-align: center;
+  margin-top: 0; /* Ensure there's no margin at the top */
+  padding: 0;
+  width: 100%;
+  height: 180vh; /* Make the header cover 60% of the viewport height */
+  background: url('../images/tokyorakugaki_header.svg') no-repeat center center;
   background-size: cover;
-  padding: 20px;
-} */
+  background-attachment: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; /* Position the content within the header */
+  top: 50%; /* Adjust to position the content lower */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Center the content vertically */
+}
+
+.headerImage {
+  width: 80%; /* Shrink the image width */
+  height: auto;
+  max-width: 1200px;
+  margin-top: 0;
+}
 
 .additionalSection {
   background-color: #8d98a1c3;
@@ -55,6 +80,10 @@
     top: 35%;
     right: 10%;
   }
+
+  .header {
+    height: 60vh; /* Adjust header height for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
@@ -68,14 +97,18 @@
     top: 40%;
     right: 5%;
   }
+
+  .header {
+    height: 30vh; /* Adjust header height for very small screens */
+  }
 }
 
-/* Adjust background size and position for larger screens */
 @media (min-width: 1024px) {
   .mainBackground {
     padding: 40px 20px;
     background-size: cover;
   }
+
   .headingStyles {
     font-size: 5vw; /* Adjust for larger screens */
   }
@@ -87,7 +120,6 @@
   }
 }
 
-/* Adjust background size and position for smaller screens */
 @media (max-width: 1024px) {
   .mainBackground {
     background-size: contain;

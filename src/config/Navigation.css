@@ -1,9 +1,10 @@
 /* Add a black background color to the top navigation */
 .navbar {
-  /* background-color: #333; */
+  background-color: transparent;
   overflow: visible;
   width: 100%;
   position: relative;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 /* Style the links inside the navigation bar */
@@ -90,5 +91,9 @@
 
   .dropdownContent {
     position: relative;
+  }
+
+  .navbar {
+    background-color: #8d98a1c3; /* Apply the desired color when screen is small */
   }
 }
