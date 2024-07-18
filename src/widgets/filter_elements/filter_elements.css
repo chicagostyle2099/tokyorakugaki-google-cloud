@@ -8,7 +8,7 @@
 
 .filterDiv {
   float: left;
-  background-color: #8d98a1c3;
+  background-color: #8d98a133;
   color: #ffffff;
   width: 100px;
   line-height: 100px;
@@ -43,7 +43,7 @@
 
 /* tabs */
 .btn.active { 
-  background-color: rgba(59, 59, 76, 0.458);
+  background-color: #050505bd;
   color: white;
 }
 
