@@ -1,0 +1,155 @@
+/* tokyorakugaki_background.css */
+
+.mainBackground {
+  /* background: url('../images/tokyorakugaki_background.png') no-repeat center center; */
+  background-size: cover;
+  background-color: #DFD4BA;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px 10px;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.headingStyles {
+  margin-top: 0;
+  margin-bottom: 64px;
+  max-width: 100%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10vw; /* Use viewport width for responsiveness */
+}
+
+.yujiSyukuRegular {
+  font-family: "Abys";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5vw; /* Use viewport width for responsiveness */
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  margin-top: 0; /* Ensure there's no margin at the top */
+  padding: 0;
+  width: 100%;
+  height: 180vh; /* Make the header cover 60% of the viewport height */
+  background: url('../images/tokyorakugaki_header.svg') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.kanjiheader {
+  position: relative;
+  text-align: center;
+  margin-top: 0; /* Ensure there's no margin at the top */
+  padding: 0;
+  width: 100%;
+  height: 230vh; /* Make the header cover 60% of the viewport height */
+  background: url('../images/kanji_background2.svg') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; /* Position the content within the header */
+  top: 50%; /* Adjust to position the content lower */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Center the content vertically */
+}
+
+.headerImage {
+  width: 80%; /* Shrink the image width */
+  height: auto;
+  max-width: 1200px;
+  margin-top: 0;
+}
+
+.additionalSection {
+  background-color: #8d98a133;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .kanjiStyle {
+    font-size: 15vw;
+    top: 30%;
+    left: 10%;
+  }
+  .romajiStyle {
+    font-size: 15vw;
+    top: 35%;
+    right: 10%;
+  }
+
+  .header {
+    height: 60vh; /* Adjust header height for smaller screens */
+  }
+
+  .kanjiheader {
+    height: 130vh; /* Adjust header height for very small screens */
+    width: 117%;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanjiStyle {
+    font-size: 20vw;
+    top: 35%;
+    left: 5%;
+  }
+  .romajiStyle {
+    font-size: 20vw;
+    top: 40%;
+    right: 5%;
+  }
+
+  .header {
+    height: 30vh; /* Adjust header height for very small screens */
+  }
+
+  .kanjiheader {
+    height: 30vh; /* Adjust header height for very small screens */
+  }
+
+  .headerImage {
+    height: 30vh; /* Adjust header height for very small screens */
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainBackground {
+    padding: 40px 20px;
+    background-size: cover;
+  }
+
+  .headingStyles {
+    font-size: 5vw; /* Adjust for larger screens */
+  }
+  .yujiSyukuRegular {
+    font-size: 2.5vw; /* Adjust for larger screens */
+  }
+  .additionalSection {
+    padding: 70px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainBackground {
+    background-size: contain;
+  }
+}

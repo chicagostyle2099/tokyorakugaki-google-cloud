@@ -1,8 +1,8 @@
 import React from "react";
 import Navigation from "./Navigation";
-import kanji_background from "./kanji_background";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../widgets/hovercard/hovercard";
 import links from "./links";
+import "./tokyorakugaki_background.css"; // Import the CSS file
 
 const headingStyles = {
   marginTop: 0,
@@ -85,9 +85,10 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
   };
 
   return (
-    <main style={{ ...kanji_background, ...yujiSyukuRegularStyle, ...layoutStyles }}>
-      <header>
+    <main className="mainBackground" style={{ ...yujiSyukuRegularStyle, ...layoutStyles }}>
+      <header className="kanjiheader">
         <Navigation links={links} />
+        {/* <img src="./images/kanji_background2.svg" alt="Kanji Header" className="headerImage" /> */}
       </header>
       <title>Kanji Template Page</title>
       <h1 style={headingStyles}>

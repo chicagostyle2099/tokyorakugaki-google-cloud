@@ -1,5 +1,5 @@
 import React from "react";
-import tokyorakugaki_image from "../images/tokyorakugaki_header.png";
+import tokyorakugaki_image from "../images/tokyorakugaki_header.svg";
 
 const tokyorakugaki_header = {
   background: `url(${tokyorakugaki_image}) no-repeat center center fixed`,

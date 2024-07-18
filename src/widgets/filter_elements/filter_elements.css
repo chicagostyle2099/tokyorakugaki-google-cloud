@@ -3,11 +3,12 @@
 /* Base styles */
 .container {
   padding: 10px;
+  margin-top: 0; /* Remove any top margin */
 }
 
 .filterDiv {
   float: left;
-  background-color: #8d98a1c3;
+  background-color: #8d98a133;
   color: #ffffff;
   width: 100px;
   line-height: 100px;
@@ -18,7 +19,7 @@
 
 /* kanji blocks */
 .filterDiv .item-link {
-  color: #000000; /* Ensure the links are white */
+  color: #000000; /* Ensure the links are black */
   text-decoration: none;
 }
 
@@ -42,10 +43,11 @@
 
 /* tabs */
 .btn.active { 
-  background-color: rgba(59, 59, 76, 0.458);
+  background-color: #050505bd;
   color: white;
 }
 
+/* Media queries for different screen sizes */
 @media (min-width: 600px) {
   .btn {
     width: auto;
@@ -60,4 +62,39 @@
   .filterDiv {
     width: calc(50% - 4px);
   }
+}
+
+@media (max-width: 480px) {
+  .filterDiv {
+    width: calc(100% - 4px);
+    line-height: 60px; /* Adjust line-height for smaller screens */
+  }
+  .btn {
+    padding: 10px 14px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Adjustments to display elements higher up */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainBackground {
+  padding-top: 0; /* Ensure no padding at the top */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.header {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.headerContent {
+  margin-top: 0;
+}
+
+.additionalSection {
+  padding-top: 20px; /* Adjust as needed */
 }
