@@ -45,6 +45,7 @@
   margin-top: 0; /* Ensure there's no margin at the top */
   padding: 0;
   width: 100%;
+  max-width: 100%;
   height: 180vh; /* Make the header cover 60% of the viewport height */
   background: url('../images/kanji_background2.svg') no-repeat center center;
   background-size: cover;
