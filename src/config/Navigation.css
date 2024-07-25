@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 .navbar {
   background-color: transparent;
+  font-family: 'Abys';
   overflow: visible;
   width: 100%;
   position: relative;

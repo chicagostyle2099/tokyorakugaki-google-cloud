@@ -44,6 +44,7 @@ const romajiStyle = {
   color: "#000000",
   position: "absolute",
   fontSize: "10vw", // Use viewport width for responsiveness
+  fontFamily: 'Abys',
   zIndex: 1,
   margin: 0,
   padding: 0,
@@ -85,7 +86,7 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
   };
 
   return (
-    <main className="mainBackground" style={{ ...yujiSyukuRegularStyle, ...layoutStyles }}>
+    <main className="mainBackground" style={{  ...layoutStyles }}>
       <header className="kanjiheader">
         <Navigation links={links} />
         {/* <img src="./images/kanji_background2.svg" alt="Kanji Header" className="headerImage" /> */}
