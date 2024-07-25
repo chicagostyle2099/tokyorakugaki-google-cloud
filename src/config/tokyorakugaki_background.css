@@ -84,7 +84,7 @@
   font-family: Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .kanjiStyle {
     font-size: 15vw;
     top: 30%;
@@ -97,12 +97,14 @@
   }
 
   .header {
-    height: 60vh; /* Adjust header height for smaller screens */
+    height: 80vh; /* Adjust header height for smaller screens */
+    width: 150%;
+    
   }
 
   .kanjiheader {
-    height: 130vh; /* Adjust header height for very small screens */
-    width: 117%;
+    height: 140vh; /* Adjust header height for smaller screens */
+    width: 112%;
   }
 }
 
