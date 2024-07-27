@@ -35,7 +35,7 @@
   padding: 0;
   width: 100%;
   max-width: 100%;
-  height: 180vh; /* Make the header cover 60% of the viewport height */
+  height: 200vh; /* Make the header cover 60% of the viewport height */
   background: url('../images/tokyorakugaki_header.svg') no-repeat center center;
   background-size: cover;
   background-attachment: scroll;
@@ -49,7 +49,7 @@
   margin-top: 0; /* Ensure there's no margin at the top */
   padding: 0;
   width: 100%;
-  height: 230vh; /* Make the header cover 60% of the viewport height */
+  height: 250vh; /* Make the header cover 60% of the viewport height */
   background: url('../images/kanji_background2.svg') no-repeat center center;
   background-size: cover;
   background-attachment: scroll;
@@ -121,13 +121,13 @@
   }
 
   .header {
-    height: 55vh; /* Adjust header height for very small screens */
+    height: 60vh; /* Adjust header height for very small screens */
     
   }
 
   .kanjiheader {
-    height: 120vh; /* Adjust header height for very small screens */
-    width: 130vw;
+    height: 125vh; /* Adjust header height for very small screens */
+    width: 105vw;
     
   }
 
