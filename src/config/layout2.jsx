@@ -86,11 +86,11 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
   };
 
   return (
-    <main className="mainBackground" style={{  ...layoutStyles }}>
-      <header className="kanjiheader">
+    <main className="mainBackground" style={{...yujiSyukuRegularStyle,  ...layoutStyles }}>
+      {/* <header className="kanjiheader"> */}
         <Navigation links={links} />
         {/* <img src="./images/kanji_background2.svg" alt="Kanji Header" className="headerImage" /> */}
-      </header>
+      {/* </header> */}
       <title>Kanji Template Page</title>
       <h1 style={headingStyles}>
         {/* Adjusted margin instead of using <br /> */}
