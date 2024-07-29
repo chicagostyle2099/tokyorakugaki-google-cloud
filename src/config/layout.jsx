@@ -4,9 +4,17 @@ import links from "./links";
 import tokyorakugaki_header from "./tokyorakugaki_header"; // Import the image
 import "./tokyorakugaki_background.css"; // Import the CSS file
 
+
+const yujiSyukuRegularStyle = {
+  fontFamily: "Abys",
+  fontWeight: 500,
+  fontStyle: "normal",
+  fontSize: "2rem", // Use rem for font size
+};
+
 const LayoutTokyo = ({ children }) => {
   return (
-    <main className="mainBackground yujiSyukuRegular">
+    <main className="mainBackground yujiSyukuRegular" style={yujiSyukuRegularStyle}>
       <header className="header">
       <Navigation links={links} />
         <div className="headerContent">
