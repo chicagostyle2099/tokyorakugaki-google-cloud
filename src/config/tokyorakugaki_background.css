@@ -40,12 +40,10 @@
   background-size: cover;
   background-attachment: scroll;
   overflow-x: hidden;
-  z-index: 1;
 }
 
-.kanjiheader { 
-  position: relative; 
-  font-family: "Abys";
+.kanjiheader {
+  position: relative;
   text-align: center;
   margin-top: 0; /* Ensure there's no margin at the top */
   padding: 0;
@@ -55,7 +53,6 @@
   background-size: cover;
   background-attachment: scroll;
   overflow-x: hidden;
-  z-index: 1;
 }
 
 .headerContent {

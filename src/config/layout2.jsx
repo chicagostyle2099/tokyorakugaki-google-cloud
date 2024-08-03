@@ -96,7 +96,7 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
         {/* Adjusted margin instead of using <br /> */}
       </h1>
       <style>{styles}</style>
-      <p className="kanjiStyle" style={kanjiStyle}>
+      <p className="kanjiStyle" style={kanjiStyle} zIndex={1}>
         <HoverCard>
           <HoverCardTrigger style={hoverCardStyles}>{kanji}{" "}</HoverCardTrigger>
           <HoverCardContent>
