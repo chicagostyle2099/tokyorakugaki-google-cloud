@@ -1,4 +1,12 @@
 /* Add a black background color to the top navigation */
+
+@font-face {
+  font-family: 'Abys';
+  src: url('../config/Abys-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .navbar {
   background-color: transparent;
   font-family: 'Abys';
