@@ -9,6 +9,8 @@
 .filterDiv {
   float: left;
   background-color: #05050511;
+  /* background-color: #05050507; */
+  /* background-color: #8d98a133; */
   color: #ffffff; 
   width: 100px;
   line-height: 100px;
@@ -39,7 +41,7 @@
   outline: none; 
   padding: 30px 70px;
   background-color: #DFD4BA;
-  font-family: "Abys";
+  /* font-family: "Abys"; */
   font-size: 20px;
   cursor: pointer;
   width: 100%;
@@ -50,6 +52,7 @@
 
 .btn:hover {
   background-color: #ddd;
+  font-family: "Abys";
 }
 
 /* tabs */
@@ -83,7 +86,7 @@
   }
   .btn {
     padding: 10px 14px; /* Adjust padding for smaller screens */
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 23px; /* Adjust font size for smaller screens */
     background-color:#DFD4BA;
     /* transition: background-color 0.7s ease; Smooth transition for background color change */
 
