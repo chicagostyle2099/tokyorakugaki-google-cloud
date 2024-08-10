@@ -8,7 +8,7 @@
 
 .filterDiv {
   float: left;
-  background-color: #8d98a133;
+  background-color: #05050511;
   color: #ffffff; 
   width: 100px;
   line-height: 100px;
@@ -84,6 +84,9 @@
   .btn {
     padding: 10px 14px; /* Adjust padding for smaller screens */
     font-size: 18px; /* Adjust font size for smaller screens */
+    background-color:#05050511;
+    /* transition: background-color 0.7s ease; Smooth transition for background color change */
+
   }
 }
 

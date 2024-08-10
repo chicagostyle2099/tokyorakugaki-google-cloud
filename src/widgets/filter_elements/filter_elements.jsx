@@ -107,9 +107,9 @@ const FilterComponent = () => {
         <button className={`btn ${filter === 'sha' ? 'active' : ''}`} onClick={() => filterSelection('sha')}>Sha</button>
         <button className={`btn ${filter === 'shi' ? 'active' : ''}`} onClick={() => filterSelection('shi')}>Shi</button>
         <button className={`btn ${filter === 'shin' ? 'active' : ''}`} onClick={() => filterSelection('shin')}>Shin</button>
-        <button className={`btn ${filter === 'Shou' ? 'active' : ''}`} onClick={() => filterSelection('Shou')}>Shou</button>
-        <button className={`btn ${filter === 'Shu' ? 'active' : ''}`} onClick={() => filterSelection('Shu')}>Shu</button>
-        <button className={`btn ${filter === 'Shuu' ? 'active' : ''}`} onClick={() => filterSelection('Shuu')}>Shuu</button>
+        <button className={`btn ${filter === 'Shou' ? 'active' : ''}`} onClick={() => filterSelection('shou')}>Shou</button>
+        <button className={`btn ${filter === 'Shu' ? 'active' : ''}`} onClick={() => filterSelection('shu')}>Shu</button>
+        <button className={`btn ${filter === 'Shuu' ? 'active' : ''}`} onClick={() => filterSelection('shuu')}>Shuu</button>
         <button className={`btn ${filter === 'So' ? 'active' : ''}`} onClick={() => filterSelection('So')}>So</button>
         <button className={`btn ${filter === 'Sou' ? 'active' : ''}`} onClick={() => filterSelection('Sou')}>Sou</button>
         <button className={`btn ${filter === 'Tai' ? 'active' : ''}`} onClick={() => filterSelection('Tai')}>Tai</button>
