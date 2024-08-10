@@ -81,8 +81,8 @@
     line-height: 60px; /* Adjust line-height for smaller screens */
   }
   .btn {
-    padding: 5px 14px; /* Adjust padding for smaller screens */
-    font-size: 20px; /* Adjust font size for smaller screens */
+    padding: 10px 14px; /* Adjust padding for smaller screens */
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
 }
 
