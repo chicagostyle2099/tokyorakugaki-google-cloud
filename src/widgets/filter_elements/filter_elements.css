@@ -79,6 +79,7 @@
   .filterDiv {
     width: calc(20% - 4px);
     line-height: 60px; /* Adjust line-height for smaller screens */
+    font-size: xx-large;
   }
   .btn {
     padding: 10px 14px; /* Adjust padding for smaller screens */
