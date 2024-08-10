@@ -33,6 +33,7 @@ const kanjiStyle = {
   color: "#AE181E",
   position: "absolute",
   fontSize: "10vw", // Use viewport width for responsiveness
+  fontFamily: "Abys",
   zIndex: 1,
   margin: 0,
   padding: 0,
@@ -96,7 +97,7 @@ const LayoutTokyo2 = ({ kanji, romaji, hiragana }) => {
         {/* Adjusted margin instead of using <br /> */}
       </h1>
       <style>{styles}</style>
-      <p className="kanjiStyle" style={kanjiStyle} zIndex={1}>
+      <p className="kanjiStyle" style={kanjiStyle}>
         <HoverCard>
           <HoverCardTrigger style={hoverCardStyles}>{kanji}{" "}</HoverCardTrigger>
           <HoverCardContent>

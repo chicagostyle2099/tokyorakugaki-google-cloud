@@ -7,6 +7,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Otsutome';
+  src: url('../config/OtsutomeFont_Ver3_16.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .navbar {
   background-color: transparent;
   font-family: 'Abys';

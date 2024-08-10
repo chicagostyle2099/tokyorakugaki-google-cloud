@@ -9,7 +9,7 @@
 .filterDiv {
   float: left;
   background-color: #8d98a133;
-  color: #ffffff;
+  color: #ffffff; 
   width: 100px;
   line-height: 100px;
   text-align: center;
@@ -21,6 +21,13 @@
 .filterDiv .item-link {
   color: #000000; /* Ensure the links are black */
   text-decoration: none;
+  /* font-family: "Otsutome"; */
+}
+
+.filterDiv:hover {
+  color: #000000; /* Ensure the links are black */
+  text-decoration: none;
+  font-family: "Otsutome";
 }
 
 .show {
@@ -29,9 +36,11 @@
 
 .btn {
   border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
+  outline: none; 
+  padding: 30px 70px;
+  background-color: #DFD4BA;
+  font-family: "Abys";
+  font-size: 20px;
   cursor: pointer;
   width: 100%;
   margin: 5px 0;
@@ -73,7 +82,7 @@
   }
   .btn {
     padding: 10px 14px; /* Adjust padding for smaller screens */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 }
 
