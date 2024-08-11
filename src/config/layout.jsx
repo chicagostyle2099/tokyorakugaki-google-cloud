@@ -15,8 +15,9 @@ const yujiSyukuRegularStyle = {
 const LayoutTokyo = ({ children }) => {
   return (
     <main className="mainBackground yujiSyukuRegular">
-      <header className="header" style={yujiSyukuRegularStyle}>
       <Navigation links={links} />
+      <header className="header" style={yujiSyukuRegularStyle}>
+     
         <div className="headerContent">
           
           {/* <img src={tokyorakugaki_header} alt="Tokyo Rakugaki" className="headerImage" /> */}
