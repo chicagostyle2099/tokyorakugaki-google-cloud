@@ -39,6 +39,7 @@ const FilterComponent = () => {
     { category: 'chou', name: '場', link: '/chou/chou_senjou'},
     { category: 'chou', name: '調', link: '/chou/chou_chousha'},
     { category: 'chou', name: '挑', link: '/chou/chou_chousen'},
+    { category: 'chou', name: '眺', link: '/chou/chou_nagameru'},
     { category: 'chou', name: '跳', link: '/chou/chou_chouyaku'},
     { category: 'chou', name: '長', link: '/chou/chou_seichou'},
     { category: 'chou', name: '張', link: '/chou/chou_kinchou'},
@@ -84,7 +85,7 @@ const FilterComponent = () => {
     { category: 'en', name: '圧', link: '/en/en_atsu'},
     { category: 'en', name: '園', link: '/en/en_kouen'},
     { category: 'en', name: '援', link: '/en/en_enjo'},
-    { category: 'en', name: '捐', link: '/en/en_suteru'},
+    // { category: 'en', name: '捐', link: '/en/en_suteru'},
     
     // FU
     { category: 'fu', name: '不', link: '/fu/fu_fushigi'},
@@ -129,7 +130,7 @@ const FilterComponent = () => {
     { category: 'go', name: '拒', link: '/go/go_kyohi'},
     { category: 'go', name: '御', link: '/go/go_gomen'},
     { category: 'go', name: '其', link: '/go/go_sore'},
-    { category: 'chou', name: '吾', link: '/go/go_ware'},
+    { category: 'go', name: '吾', link: '/go/go_ware'},
 
     // HAN
     { category: 'han', name: '番', link: '/han/han_bangumi'},
@@ -145,23 +146,27 @@ const FilterComponent = () => {
    
     // HI
     { category: 'hi', name: '灯', link: '/hi/hi_dentou'},
+    { category: 'hi', name: '火', link: '/hi/hi_kaji'},
     { category: 'hi', name: '日', link: '/hi/hi_nihon'},
-    { category: 'hi', name: '被', link: '/hi/hi_kaburu'},
     { category: 'hi', name: '非', link: '/hi/hi_hijou'},
     { category: 'hi', name: '悲', link: '/hi/hi_kanashii'},
+    { category: 'hi', name: '靡', link: '/hi/hi_nabiku'},
     { category: 'hi', name: '秘', link: '/hi/hi_himitsu'},
-    { category: 'hi', name: '皮', link: '/hi/hi_hifu'},
     { category: 'hi', name: '比', link: '/hi/hi_kuraberu'},
     { category: 'hi', name: '否', link: '/hi/hi_anpi'},
+    { category: 'hi', name: '皮', link: '/hi/hi_hifu'},
+    { category: 'hi', name: '被', link: '/hi/hi_kaburu'},
     { category: 'hi', name: '彼', link: '/hi/hi_kare'},
-    { category: 'hi', name: '火', link: '/hi/hi_kaji'},
-    { category: 'hi', name: '靡', link: '/hi/hi_nabiku'},
-    { category: 'hi', name: '卑', link: '/hi/hi_hizoku'},
+    { category: 'hi', name: '披', link: '/hi/hi_hiraku'},
     { category: 'hi', name: '疲', link: '/hi/hi_tsukareru'},
+    { category: 'hi', name: '卑', link: '/hi/hi_hizoku'},
+    { category: 'hi', name: '避', link: '/hi/hi_hinan'},
+
    
 
     // HOU
     { category: 'hou', name: '飽', link: '/hou/hou_akumade'},
+    { category: 'hou', name: '砲', link: '/hou/hou_teppou'},
     { category: 'hou', name: '並', link: '/hou/hou_naraberu'},
     { category: 'hou', name: '法', link: '/hou/hou_houritsu'},
     // { category: 'hou', name: '汎', link: '/hou/hou_hanyou'},
@@ -172,7 +177,7 @@ const FilterComponent = () => {
     { category: 'hou', name: '報', link: '/hou/hou_houdou'},
     { category: 'hou', name: '奉', link: '/hou/hou_houzuru'},
     { category: 'hou', name: '封', link: '/hou/hou_fuuin'},
-    { category: 'hou', name: '砲', link: '/hou/hou_teppou'},
+    { category: 'hou', name: '邦', link: '/hou/hou_renpou'},
  
 
     // JI
@@ -203,6 +208,8 @@ const FilterComponent = () => {
     { category: 'jin', name: '神', link: '/jin/jin_jinja'},
     { category: 'jin', name: '塵', link: '/jin/jin_gomi'},
     { category: 'jin', name: '刃', link: '/jin/jin_yaiba'},
+    { category: 'jin', name: '陣', link: '/jin/jin_jinei'},
+    { category: 'jin', name: '臣', link: '/jin/jin_daijin'},
    
 
     // JOU
@@ -210,7 +217,7 @@ const FilterComponent = () => {
     { category: 'jou', name: '場', link: '/jou/jou_senjou'},
     { category: 'jou', name: '乗', link: '/jou/jou_noru'},
     { category: 'jou', name: '静', link: '/jou/jou_shizuka'},
-    { category: 'jou', name: '定', link: '/jou/jou_kanjou'},
+    { category: 'jou', name: '定', link: '/jou/jou_sadameru'},
     { category: 'jou', name: '成', link: '/jou/jou_naru'},
     { category: 'jou', name: '盛', link: '/jou/jou_sakan'},
     { category: 'jou', name: '常', link: '/jou/jou_joutai'},
@@ -334,6 +341,8 @@ const FilterComponent = () => {
     { category: 'kei', name: '警', link: '/kei/kei_keisatsu'},
     { category: 'kei', name: '掲', link: '/kei/kei_kakageru'},
     { category: 'kei', name: '経', link: '/kei/kei_keiken'},
+    { category: 'kei', name: '軽', link: '/kei/kei_keiyu'},
+    { category: 'kei', name: '景', link: '/kei/kei_keiyu'},
     { category: 'kei', name: '競', link: '/kei/kei_kyousou'},
     { category: 'kei', name: '形', link: '/kei/kei_katachi'},
     { category: 'kei', name: '稽', link: '/kei/kei_kangaeru'},
@@ -342,9 +351,12 @@ const FilterComponent = () => {
     { category: 'kei', name: '携', link: '/kei/kei_tazusaeru'},
     { category: 'kei', name: '繋', link: '/kei/kei_tsunagu'},
     { category: 'kei', name: '傾', link: '/kei/kei_keiyaku'},
+    { category: 'kei', name: '計', link: '/kei/kei_suisei'},
+    { category: 'kei', name: '刑', link: '/kei/kei_suisei'},
     { category: 'kei', name: '彗', link: '/kei/kei_suisei'},
     { category: 'kei', name: '型', link: '/kei/kei_teikei'},
-    { category: 'kei', name: '継', link: '/kei/kei_teikei'},
+    { category: 'kei', name: '継', link: '/kei/kei_tsugu'},
+    
 
 
     // KEN
@@ -382,14 +394,17 @@ const FilterComponent = () => {
     { category: 'ki', name: '期', link: '/ki/ki_jiki'},
     { category: 'ki', name: '機', link: '/ki/ki_kikai'},
     { category: 'ki', name: '木', link: '/ki/ki_moku'},
-    { category: 'ki', name: '企', link: '/ki/ki_kigyou'},   
+    { category: 'ki', name: '企', link: '/ki/ki_kigyou'},
+    { category: 'ki', name: '創', link: '/ki/ki_souzou'},   
     { category: 'ki', name: '規', link: '/ki/ki_kisei'},
     { category: 'ki', name: '奇', link: '/ki/ki_kirei'},
     { category: 'ki', name: '基', link: '/ki/ki_kihon'},
+    { category: 'ki', name: '乞', link: '/ki/ki_monogoi'},
     { category: 'ki', name: '虫', link: '/ki/ki_mushi'},
     { category: 'ki', name: '黄', link: '/ki/ki_kiiroi'},
     { category: 'ki', name: '輝', link: '/ki/ki_kagayaki'},
     { category: 'ki', name: '其', link: '/ki/ki_sore'},
+    { category: 'ki', name: '岐', link: '/ki/ki_bunkiten'},
     { category: 'ki', name: '寄', link: '/ki/ki_yoseru'},
     
 
@@ -403,6 +418,11 @@ const FilterComponent = () => {
     { category: 'ko', name: '故', link: '/ko/ko_furusato'},
     { category: 'ko', name: '仔', link: '/ko/ko_koinu'},
     { category: 'ko', name: '庫', link: '/ko/ko_chozouko'},
+    { category: 'ko', name: '来', link: '/ko/ko_mirai'},
+    { category: 'ko', name: '蚕', link: '/ko/ko_sanshu'},
+    { category: 'ko', name: '黄', link: '/ko/ko_tasogare'},
+    { category: 'ko', name: '乎', link: '/ko/ko_junko'},
+    
    
 
 
